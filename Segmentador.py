@@ -33,7 +33,7 @@ def enviar_paquetes(destino, partes):
 
 def main():
     if len(sys.argv) < 3:
-        print(f"Uso: {sys.argv[0]} <nombre_archivo> <destino>")
+        print(f"Uso: {sys.argv[0]} <Nombre de Archivo> <Direccion IP de Destino>")
         sys.exit(1)
 
     nombre_archivo = sys.argv[1]
