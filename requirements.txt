@@ -1,2 +1,2 @@
 Scapy
-termcolors
+termcolor
