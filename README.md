@@ -1,21 +1,25 @@
-# Himitsu | ICMP Tunneling
+# Himitsu | ICMP Data Exfiltration
 
 ![](https://raw.githubusercontent.com/NaotaClone/Himitsu/main/Himitsu.png)
 
 
-Himitsu es una herramienta creada con Scapy cuyo propósito es facilitar la generación de escenarios de pruebas para la exfiltración de datos entre estaciones utilizando el protocolo de red ICMP. Esta herramienta se encarga de dividir archivos de cualquier tipo en bloques de 60 bytes, los cuales son insertados en el campo de datos de los paquetes ICMP mediante el script "Segmentador.py" (desde la perspectiva de la víctima). Esto permite enviar imágenes, binarios, diccionarios u otro tipo de información relevante para las pruebas. Por otro lado, en la máquina receptora de la información, los paquetes ICMP son recibidos y posteriormente ensamblados mediante el script "Ensamblador.py", lo que permite reconstruir el archivo final extrayendo las cadenas recibidas en el campo de datos.
+Himitsu is a tool created with Scapy whose purpose is to facilitate the generation of test scenarios for the exfiltration of data between stations using the ICMP network protocol. This tool is responsible for dividing files of any type into 60-byte blocks, which are inserted into the data field of the ICMP packets using the script "Segmentador.py" (from the victim's perspective). This allows you to send images, binaries, dictionaries, or other information relevant to testing. On the other hand, on the machine receiving the information, the ICMP packets are received and subsequently assembled using the script "Assembler.py", which allows the final file to be reconstructed by extracting the strings received in the data field.
 
 ```bash
-  Cabe destacar que antes de realizar la ejecución debe contar con Python3 & Scapy instalados en ambos sistemas.
+  It should be noted that this tool's operation may vary depending on the version of Windows you are on. During the tests, the machines had Wireshark installed inside the stations.
 ```
 
-## Instrucciones de uso
+## Instructions
 
-### HT-Segment.py - Segmentador de archivos.
+## Library deployment
 ```bash
-  HT-Segment.py <Nombre del Archivo a Enviar> <Dirección IP de Destino>
+  python -m pip install -r requirements.txt
 ```
-### HT-Assembler.py - Ensamblador de archivos.
+### HT-Segment.py - File Segmenter .
 ```bash
-  HT-Assembler.py <Nombre del Archivo a Ensamblar>
+  HT-Segment.py <File Name> <Destination Ip Address>
+```
+### HT-Assembler.py - File Assembler.
+```bash
+  HT-Assembler.py <File Name to Assembled>
 ```
