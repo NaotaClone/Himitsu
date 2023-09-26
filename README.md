@@ -13,9 +13,9 @@ Himitsu es una herramienta creada con Scapy cuyo propósito es facilitar la gene
 
 ### Segmentador.py
 ```bash
-  Segmentador.py <Nombre del Archivo a Enviar> <Dirección IP de Destino>
+  HT-Segment.py <Nombre del Archivo a Enviar> <Dirección IP de Destino>
 ```
 ### Ensamblador.py
 ```bash
-  Ensamblador.py <Nombre del Archivo a Ensamblar>
+  HT-Assembler.py <Nombre del Archivo a Ensamblar>
 ```
