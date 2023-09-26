@@ -11,11 +11,11 @@ Himitsu es una herramienta creada con Scapy cuyo propósito es facilitar la gene
 
 ## Instrucciones de uso
 
-### Segmentador.py
+### HT-Segment.py - Segmentador de archivos.
 ```bash
   HT-Segment.py <Nombre del Archivo a Enviar> <Dirección IP de Destino>
 ```
-### Ensamblador.py
+### HT-Assembler.py - Ensamblador de archivos.
 ```bash
   HT-Assembler.py <Nombre del Archivo a Ensamblar>
 ```
