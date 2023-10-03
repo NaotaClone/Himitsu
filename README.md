@@ -17,9 +17,9 @@ Himitsu is a tool created with Scapy whose purpose is to facilitate the generati
 ```
 ### HT-Segment.py - File Segmenter .
 ```bash
-  HT-Segment.py <File Name> <Destination Ip Address>
+  python HT-Segment.py <File Name> <Destination Ip Address>
 ```
 ### HT-Assembler.py - File Assembler.
 ```bash
-  HT-Assembler.py <File Name to Assembled>
+  python HT-Assembler.py <File Name to Assembled>
 ```
