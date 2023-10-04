@@ -10,9 +10,8 @@ print(colored("""\
  / /_/ / | '_ ` _ \| | __/ __| | | |
 / __  /| | | | | | | | |_\__ \ |_| |
 \/ /_/ |_|_| |_| |_|_|\__|___/\__,_|
+-Ensamblador Tunel ICMP - By: NaotaClone-
                     """, "red"))
-
-print(colored("-Ensamblador Tunel ICMP - By: NaotaClone-", "red"))
 
 def reensamblar_archivo(paquetes, nombre_archivo):
     with open(nombre_archivo, "wb") as archivo:
