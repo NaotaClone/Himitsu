@@ -12,9 +12,8 @@ print(colored("""\
  / /_/ / | '_ ` _ \| | __/ __| | | |
 / __  /| | | | | | | | |_\__ \ |_| |
 \/ /_/ |_|_| |_| |_|_|\__|___/\__,_|
+-Ensamblador Tunel ICMP - By: NaotaClone-
                     """, "red"))
-
-print(colored("-Segmentador Tunel ICMP - By: NaotaClone-", "red"))
 
 def divide_archivo(nombre_archivo, tamano_parte):
     partes = []
